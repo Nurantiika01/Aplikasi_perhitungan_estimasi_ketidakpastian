@@ -124,7 +124,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
 
         if tombol:
             nilai_μ_labu_takar = (((miu_kal_labu_takar_mL/1.73205)**2)+((volume_labu_takar_mL_2*delta_suhu_4*koefisien_muai_air_4/1.73205)**2))**0.5
-            st.success(f"Nilai μ labu takar adalah {nilai_μ_labu_takar }")
+            st.success(f"Nilai μ labu takar (mL) adalah {nilai_μ_labu_takar }")
             st.balloons()
 
 
