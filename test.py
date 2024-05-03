@@ -145,7 +145,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         tombol = st.button("Hitung nilai μ FP")
 
         if tombol:
-            nilai_μ_FP = faktor_pengali_2*(((miu_labu_takar/volume_labu_takar_mL)**2)+((miu_pipet_mL/volume_pipet_mL_1)**2))**0.5
+            nilai_μ_FP = faktor_pengali_2*(((miu_labu_takar_mL/volume_labu_takar_mL)**2)+((miu_pipet_mL/volume_pipet_mL_1)**2))**0.5
             st.success(f"Nilai μ FP adalah {nilai_μ_FP}")
             st.balloons()
 
