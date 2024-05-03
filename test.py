@@ -131,13 +131,13 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
     def hitung5():
         st.title('Aplikasi Perhitungan μ FP')
 
-        faktor_pengali_2 = st.number_input("Masukan nilai faktor pengali",value=None, placeholder='Ketikkan angka...' )
+        faktor_pengali_2 = st.number_input("Masukan nilai faktor pengali",key="faktor_pengali_2",value=None, placeholder='Ketikkan angka...' )
         st.write(faktor_pengali_2)    
-        miu_labu_takar = st.number_input("Masukan nilai μ labu takar",value=None, placeholder='Ketikkan angka...' )
+        miu_labu_takar = st.number_input("Masukan nilai μ labu takar",key="miu_labu_takar",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_labu_takar)
-        volume_labu_takar_mL = st.number_input("Masukan nilai volume labu takar(mL)",value=None, placeholder='Ketikkan angka...' )
+        volume_labu_takar_mL = st.number_input("Masukan nilai volume labu takar(mL)",key="volume_labu_takar_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(volume_labu_takar_mL)
-        miu_ET_mL_2= st.number_input("Masukan nilai μ ET(mL)",value=None, placeholder='Ketikkan angka...')
+        miu_ET_mL_2= st.number_input("Masukan nilai μ ET(mL)",key="miu_ET_mL_2",value=None, placeholder='Ketikkan angka...')
         st.write(miu_ET_mL_2)
     
         tombol = st.button("Hitung nilai μ FP")
