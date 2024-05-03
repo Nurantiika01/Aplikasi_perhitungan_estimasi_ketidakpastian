@@ -101,7 +101,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         tombol = st.button("Hitung nilai μ pipet(mL)")
 
         if tombol:
-            nilai_μ_pipet = (((miu_kal_pipet_mL/1.73205)**2)+((volume_pipet_mL*delta_suhu_2*koefisien_muai_air_3/1.73205)**2))**0.5
+            nilai_μ_pipet = (((miu_kal_pipet_mL/1.73205)**2)+((volume_pipet_mL*delta_suhu_2*koefisien_muai_air_2/1.73205)**2))**0.5
             st.success(f"Nilai μ pipet adalah {nilai_μ_pipet}")
             st.balloons()
 
