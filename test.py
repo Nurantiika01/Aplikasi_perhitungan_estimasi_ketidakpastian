@@ -51,7 +51,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ VT'):
         tombol = st.button("Hitung nilai μ Vendpoit(mL)")
 
         if tombol:
-            nilai_μ_Vendpoit = (skala_terkecil_buret_mL*delta_suhu_1*koefisien_muai_air)/1.73205
+            nilai_μ_Vendpoit = (skala_terkecil_buret_mL*delta_suhu_1*koefisien_muai_air_1)/1.73205
             st.success(f"Nilai μ Vendpoit (mL) adalah {nilai_μ_Vendpoit}")
             st.balloons()
 
