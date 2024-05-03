@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
 
-st.sidebar.image('c:/users/LENOVO Series/LPK/Assets/nur1.png.png')
+st.sidebar.image('Aplikasi_perhitungan_estimasi_ketidakpastian/Assets/nur1.png.png')
 st.sidebar.header("WELCOME TO PROGRAM")
 st.sidebar.subheader("KELOMPOK 2")
 
