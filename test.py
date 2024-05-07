@@ -34,7 +34,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ VT'):
         if tombol:
             nilai_μ_ET = (volume_rata_rata_mL*delta_suhu*koefisien_muai_air)/1.73205
             st.success(f"Nilai μ ET (mL) adalah {nilai_μ_ET}")
-            st.balloons()
+           
     
     
     
@@ -53,7 +53,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ VT'):
         if tombol:
             nilai_μ_Vendpoit = (skala_terkecil_buret_mL*delta_suhu_1*koefisien_muai_air_1)/1.73205
             st.success(f"Nilai μ Vendpoit (mL) adalah {nilai_μ_Vendpoit}")
-            st.balloons()
+          
 
     def hitung2():
         st.title('Aplikasi Perhitungan μ Volume Titran')
@@ -70,7 +70,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ VT'):
         if tombol:
             nilai_μ_VT = (((miu_kal_buret_mL)**2)+((miu_ET_mL)**2)+((miu_Vendpoint_mL)**2))**0.5
             st.success(f"Nilai μ Volume Titran (mL) adalah {nilai_μ_VT}")
-            st.balloons()
+           
 
 
     tab1,tab2,tab3 = st.tabs(["Perhitungan μ ET", "Perhitungan μ Vendpoit","Perhitungan μ VT"])
@@ -103,7 +103,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         if tombol:
             nilai_μ_pipet = (((miu_kal_pipet_mL/1.73205)**2)+((volume_pipet_mL*delta_suhu_2*koefisien_muai_air_2/1.73205)**2))**0.5
             st.success(f"Nilai μ pipet adalah {nilai_μ_pipet}")
-            st.balloons()
+            
 
 
 
@@ -125,7 +125,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         if tombol:
             nilai_μ_labu_takar = (((miu_kal_labu_takar_mL/1.73205)**2)+((volume_labu_takar_mL_2*delta_suhu_4*koefisien_muai_air_4/1.73205)**2))**0.5
             st.success(f"Nilai μ labu takar (mL) adalah {nilai_μ_labu_takar }")
-            st.balloons()
+         
 
 
     def hitung5():
@@ -147,7 +147,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         if tombol:
             nilai_μ_FP = faktor_pengali_2*(((miu_labu_takar_mL/volume_labu_takar_mL)**2)+((miu_pipet_mL/volume_pipet_mL_1)**2))**0.5
             st.success(f"Nilai μ FP adalah {nilai_μ_FP}")
-            st.balloons()
+       
 
 
     tab1,tab2,tab3 = st.tabs(["Perhitungan μ pipet", "Perhitungan μ labu takar","Perhitungan μ FP"])
