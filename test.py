@@ -53,7 +53,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ VT'):
         if tombol:
             nilai_μ_Vendpoit = (skala_terkecil_buret_mL*delta_suhu_1*koefisien_muai_air_1)/1.73205
             st.success(f"Nilai μ Vendpoit (mL) adalah {nilai_μ_Vendpoit}")
-             st.balloons()
+            st.balloons()
           
 
     def hitung2():
@@ -71,7 +71,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ VT'):
         if tombol:
             nilai_μ_VT = (((miu_kal_buret_mL)**2)+((miu_ET_mL)**2)+((miu_Vendpoint_mL)**2))**0.5
             st.success(f"Nilai μ Volume Titran (mL) adalah {nilai_μ_VT}")
-             st.balloons()
+            st.balloons()
            
 
 
@@ -105,7 +105,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         if tombol:
             nilai_μ_pipet = (((miu_kal_pipet_mL/1.73205)**2)+((volume_pipet_mL*delta_suhu_2*koefisien_muai_air_2/1.73205)**2))**0.5
             st.success(f"Nilai μ pipet adalah {nilai_μ_pipet}")
-             st.balloons()
+            st.balloons()
             
 
 
@@ -151,7 +151,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         if tombol:
             nilai_μ_FP = faktor_pengali_2*(((miu_labu_takar_mL/volume_labu_takar_mL)**2)+((miu_pipet_mL/volume_pipet_mL_1)**2))**0.5
             st.success(f"Nilai μ FP adalah {nilai_μ_FP}")
-             st.balloons()
+            st.balloons()
                
 
 
