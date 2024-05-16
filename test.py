@@ -5,6 +5,13 @@ import pandas as pd
 st.sidebar.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/nur1.png.png')
 st.sidebar.header("WELCOME TO PROGRAM")
 st.sidebar.subheader("KELOMPOK 2")
+st.title("""
+        1. Afif Dwi Julianandi NIM 2360061
+        2. Hanan Dhiya Arrumaisha NIM 2360135
+        3. Muhammad Haikel Assidqi NIM 2360186
+        4. Nuranti Ika Wulandari NIM 2360219
+        5. Sahla Aulia NIM 2360250
+        """)
 
 
 with st.sidebar:
