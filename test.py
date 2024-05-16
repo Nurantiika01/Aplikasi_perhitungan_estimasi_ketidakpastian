@@ -43,7 +43,7 @@ if (selected2 == 'Estimasi Ketidakpastian'):
     
 if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
-        st.title('Aplikasi Perhitungan μ Efek Temperatur')
+        st.title('Perhitungan μ Efek Temperatur')
 
         volume_rata_rata_mL = st.number_input("Masukan nilai volume rata-rata(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(volume_rata_rata_mL)
@@ -63,7 +63,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
     
     
     def hitung1():
-        st.title('Aplikasi Perhitungan μ Volume Endpoint')
+        st.title('Perhitungan μ Volume Endpoint')
 
         skala_terkecil_buret_mL = st.number_input("Masukan nilai skala terkecil buret(mL)",key="skala_terkecil_buret_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(skala_terkecil_buret_mL)
@@ -81,7 +81,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
           
 
     def hitung2():
-        st.title('Aplikasi Perhitungan μ Volume Titran')
+        st.title('Perhitungan μ Volume Titran')
 
         miu_kal_buret_mL = st.number_input("Masukan nilai μ kalibrasi buret(mL)",key="miu_kal_buret_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_buret_mL)
@@ -112,7 +112,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
 
 if (selected2 == ' Perhitungan μ Faktor Pengali'):
     def hitung3():
-        st.title('Aplikasi Perhitungan μ Pipet')
+        st.title('Perhitungan μ Pipet')
 
         miu_kal_pipet_mL = st.number_input("Masukan nilai μ kalibrasi pipet(mL)",key="miu_kal_pipet_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_pipet_mL)
@@ -135,7 +135,7 @@ if (selected2 == ' Perhitungan μ Faktor Pengali'):
 
 
     def hitung4():
-        st.title('Aplikasi Perhitungan μ Labu Takar')
+        st.title('Perhitungan μ Labu Takar')
 
         miu_kal_labu_takar_mL = st.number_input("Masukan nilai μ kalibrasi labu takar(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_labu_takar_mL)
@@ -157,7 +157,7 @@ if (selected2 == ' Perhitungan μ Faktor Pengali'):
 
 
     def hitung5():
-        st.title('Aplikasi Perhitungan μ Faktor Pengali')
+        st.title('Perhitungan μ Faktor Pengali')
 
         faktor_pengali_2 = st.number_input("Masukan nilai faktor pengali",key="faktor_pengali_2",value=None, placeholder='Ketikkan angka...' )
         st.write(faktor_pengali_2)    
