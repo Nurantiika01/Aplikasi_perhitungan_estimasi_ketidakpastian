@@ -46,7 +46,6 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         if tombol:
             nilai_μ_Efek_Temperatur = (volume_rata_rata_mL*delta_suhu*koefisien_muai_air)/1.73205
             st.success(f"Nilai μ Efek Temperatur (mL) adalah {nilai_μ_Efek_Temperatur}")
-        print():.2
             st.balloons()
     
     
