@@ -33,7 +33,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
         st.title('μ Efek Temperatur')
 
-        volume_rata_rata_mL = st.number_input("Masukan nilai volume rata-rata(mL)",value=None, placeholder='Ketikkan angka...' )
+        volume_rata_rata_mL = st.number_input(f"Masukan nilai volume rata-rata(mL) adalah {variabel:2.f}",value=None, placeholder='Ketikkan angka...' )
         st.write(volume_rata_rata_mL)
         delta_suhu = st.number_input("Masukan nilai delta suhu(℃)",value=None, placeholder='Ketikkan angka...')
         st.write(delta_suhu)
