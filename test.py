@@ -60,7 +60,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         koefisien_muai_air_1 = st.number_input("Masukkan nilai koefisien muai air(℃)",key="koefisien_muai_air_1",value=None, placeholder='Ketikkan angka....')
         st.write(koefisien_muai_air_1)
 
-        tombol = st.button("Hitung nilai μ Vendpoint(mL)")
+        tombol = st.button("Hitung nilai μ Volume Endpoint(mL):.2f")
 
         if tombol:
             nilai_μ_Volume_Endpoint = (skala_terkecil_buret_mL*delta_suhu_1*koefisien_muai_air_1)/1.73205:.2f
