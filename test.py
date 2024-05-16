@@ -39,10 +39,12 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         tombol = st.button("Hitung nilai μ Kalibrasi Buret(mL)")
 
         if tombol:
-            nilai_μ_kalibrasi_buret = (volume_rata_rata_mL*delta_suhu*koefisien_muai_air)/1.73205
-            st.success(f"Nilai μ Kalibrasi Buret (mL) adalah {nilai_μ_Efek_Temperatur}")
+            nilai_μ_kalibrasi_buret =  plus_minus_buret_mL/1.73205
+            st.success(f"Nilai μ Kalibrasi Buret (mL) adalah {nilai_μ_kalibrasi_buret}")
             st.balloons()
-            
+
+
+    def hitung1():
         st.title('μ Efek Temperatur')
 
         volume_rata_rata_mL = st.number_input("Masukan nilai volume rata-rata(mL)",value=None, placeholder='Ketikkan angka...' )
@@ -62,7 +64,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
     
     
     
-    def hitung1():
+    def hitung2():
         st.title('μ Volume Endpoint')
 
         skala_terkecil_buret_mL = st.number_input("Masukan nilai skala terkecil buret(mL)",key="skala_terkecil_buret_mL",value=None, placeholder='Ketikkan angka...' )
@@ -81,7 +83,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
                 
           
 
-    def hitung2():
+    def hitung3():
         st.title('μ Volume Titran')
         
         miu_kal_buret_mL = st.number_input("Masukan nilai μ kalibrasi buret(mL)",key="miu_kal_buret_mL",value=None, placeholder='Ketikkan angka...' )
@@ -100,13 +102,15 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
        
 
 
-    tab1,tab2,tab3 = st.tabs(["Perhitungan μ Efek Temperatur", "Perhitungan μ Volume Endpoint","Perhitungan μ Volume Titran"])
+    tab1,tab2,tab3,tab4 = st.tabs(["Perhitungan μ kalibrasi buret", "Perhitungan μ Efek Temperatur", "Perhitungan μ Volume Endpoint","Perhitungan μ Volume Titran"])
     with tab1:
         tab1.write(hitung())
     with tab2:
         tab2.write(hitung1())
     with tab3:
         tab3.write(hitung2())
+    with tab4:
+        tab4.write(hitung3())
     
 
 
