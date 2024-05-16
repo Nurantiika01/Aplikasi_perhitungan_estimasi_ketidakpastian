@@ -25,15 +25,27 @@ with st.sidebar:
 
 if (selected2 == 'Estimasi Ketidakpastian'):
         st.title('Apa Itu Estimasi Ketidakpastian???')
-        st.write('''Estimasi ketidakpastian adalah aspek kritis dalam analisis data yang memungkinkanpeneliti dan praktisi untuk mengukur seberapa tidak pastinya hasil pengukuran atau perhitungan. Dalam era sekarang ini dimana keputusan seringkali didasarkan pada data dan analisis, pemahaman yang mendalam tentang ketidakpastian menjadi semakin penting. Konsep ketidakpastian memiliki aplikasi yang luas di berbagai bidang, termasuk fisika, kimia, biologi, teknik, ekonomi dan banyak lagi. Dalam bidang kimia analis, ketidakpastian membantu dalam penafsiran hasil eksperimen atau praktikum dan memvalidasi teori. Aplikasi ini membantu para pengambil keputusan untuk memahami risiko yang terkait dengan berbagai pilihan yang tersedia. Dengan pemahaman yang baik tentang ketidakpastian, keputusan dapat dibuat secara lebih informan dan berbasis data. Dalam era digital yang terus berkembang, kemampuan dalam pemrograman komputer menjadi semakin penting. Pemahaman yang kuat tentang logika pemrograman adalah fondasi yang diperlukan untuk mengembangkan program komputer yang efektif dan efisien. Selain itu, dalam konteks analisis data, khususnya dalam pembuatan laporan estimasi ketidakpastian, perlunya perhitungan yang teliti dan akurat semakin mendesak.
+        st.write('''Estimasi ketidakpastian adalah aspek kritis dalam analisis data yang memungkinkan peneliti dan praktisi untuk mengukur seberapa tidak pastinya hasil pengukuran atau perhitungan. Dalam era sekarang ini dimana keputusan seringkali didasarkan pada data dan analisis, pemahaman yang mendalam tentang ketidakpastian menjadi semakin penting. Konsep ketidakpastian memiliki aplikasi yang luas di berbagai bidang, termasuk fisika, kimia, biologi, teknik, ekonomi dan banyak lagi. Dalam bidang kimia analis, ketidakpastian membantu dalam penafsiran hasil eksperimen atau praktikum dan memvalidasi teori. Aplikasi ini membantu para pengambil keputusan untuk memahami risiko yang terkait dengan berbagai pilihan yang tersedia. Dengan pemahaman yang baik tentang ketidakpastian, keputusan dapat dibuat secara lebih informan dan berbasis data. Dalam era digital yang terus berkembang, kemampuan dalam pemrograman komputer menjadi semakin penting. Pemahaman yang kuat tentang logika pemrograman adalah fondasi yang diperlukan untuk mengembangkan program komputer yang efektif dan efisien. Selain itu, dalam konteks analisis data, khususnya dalam pembuatan laporan estimasi ketidakpastian, perlunya perhitungan yang teliti dan akurat semakin mendesak.
                 ''')
 
     
 if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
+        st.title('μ kalibrasi Buret')
+
+        plus_minus_buret_mL = st.number_input("Masukan nilai ±buret (mL)",value=None, placeholder='Ketikkan angka...' )
+        st.write(plus_minus_buret_mL)
+
+        tombol = st.button("Hitung nilai μ Kalibrasi Buret(mL)")
+
+        if tombol:
+            nilai_μ_kalibrasi_buret = (volume_rata_rata_mL*delta_suhu*koefisien_muai_air)/1.73205
+            st.success(f"Nilai μ Kalibrasi Buret (mL) adalah {nilai_μ_Efek_Temperatur}")
+            st.balloons()
+            
         st.title('μ Efek Temperatur')
 
-        volume_rata_rata_mL = st.number_input(f"Masukan nilai volume rata-rata(mL)",value=None, placeholder='Ketikkan angka...' )
+        volume_rata_rata_mL = st.number_input("Masukan nilai volume rata-rata(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(volume_rata_rata_mL)
         delta_suhu = st.number_input("Masukan nilai delta suhu(℃)",value=None, placeholder='Ketikkan angka...')
         st.write(delta_suhu)
@@ -71,7 +83,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
 
     def hitung2():
         st.title('μ Volume Titran')
-
+        
         miu_kal_buret_mL = st.number_input("Masukan nilai μ kalibrasi buret(mL)",key="miu_kal_buret_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_buret_mL)
         miu_ET_mL= st.number_input("Masukan nilai μ ET(mL)",key="miu_ET_mL",value=None, placeholder='Ketikkan angka...')
