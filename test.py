@@ -5,7 +5,7 @@ import pandas as pd
 st.sidebar.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/nur1.png.png')
 st.sidebar.header("WELCOME TO PROGRAM")
 st.sidebar.subheader("KELOMPOK 2")
-st.text("""
+st.sidebar.text("""
         1. Afif Dwi Julianandi NIM 2360061
         2. Hanan Dhiya Arrumaisha NIM 2360135
         3. Muhammad Haikel Assidqi NIM 2360186
