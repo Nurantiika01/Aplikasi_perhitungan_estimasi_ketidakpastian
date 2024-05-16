@@ -25,7 +25,7 @@ with st.sidebar:
 
 if (selected2 == 'Estimasi Ketidakpastian'):
         st.title('Apa Itu Ek')
-        st.text('''Estimasi ketidakpastian adalah aspek kritis dalam analisis data yang memungkinkan 
+        st.write('''Estimasi ketidakpastian adalah aspek kritis dalam analisis data yang memungkinkan 
         peneliti dan praktisi untuk mengukur seberapa tidak pastinya hasil pengukuran atau perhitungan. 
         Dalam era sekarang ini dimana keputusan seringkali didasarkan pada data dan analisis, 
         pemahaman yang mendalam tentang ketidakpastian menjadi semakin penting. Konsep ketidakpastian 
