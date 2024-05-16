@@ -15,7 +15,8 @@ st.sidebar.text("""
 
 
 with st.sidebar:
-    selected2 = option_menu ('Menu', ['Program Aplikasi Perhitungan μ VT', 'Program Aplikasi Perhitungan μ FP'])
+st.title('Apa Itu Estimasi Ketidakpastian')
+    selected2 = option_menu ('Menu', ['','Program Aplikasi Perhitungan μ Volume Titran', 'Program Aplikasi Perhitungan μ Faktor Pengali'])
 
 
 # with st.sidebar:
@@ -24,7 +25,7 @@ with st.sidebar:
 
 
     
-if (selected2 == 'Program Aplikasi Perhitungan μ VT'):
+if (selected2 == 'Program Aplikasi Perhitungan μ Volume Titran'):
     def hitung():
         st.title('Aplikasi Perhitungan μ ET')
 
@@ -140,7 +141,7 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
 
 
     def hitung5():
-        st.title('Aplikasi Perhitungan μ FP')
+        st.title('Aplikasi Perhitungan μ Faktor Pengali')
 
         faktor_pengali_2 = st.number_input("Masukan nilai faktor pengali",key="faktor_pengali_2",value=None, placeholder='Ketikkan angka...' )
         st.write(faktor_pengali_2)    
