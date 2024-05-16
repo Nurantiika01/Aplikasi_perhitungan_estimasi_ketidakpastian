@@ -34,7 +34,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         st.title('μ Efek Temperatur')
 
         volume_rata_rata_mL = st.number_input(f"Masukan nilai volume rata-rata(mL)",value=None, placeholder='Ketikkan angka...' )
-        st.write(f'volume rata-rata (mL) adalah {variabel:2.f}')
+        st.write(volume_rata_rata_mL)
         delta_suhu = st.number_input("Masukan nilai delta suhu(℃)",value=None, placeholder='Ketikkan angka...')
         st.write(delta_suhu)
         koefisien_muai_air = st.number_input("Masukkan nilai koefisien muai air(℃)",value=None, placeholder='Ketikkan angka....')
@@ -45,7 +45,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
 
         if tombol:
             nilai_μ_Efek_Temperatur = (volume_rata_rata_mL*delta_suhu*koefisien_muai_air)/1.73205
-            st.success(f"Nilai μ Efek Temperatur (mL) adalah {nilai_μ_Efek_Temperatur}")
+            st.success(f"Nilai μ Efek Temperatur (mL) adalah {nilai_μ_Efek_Temperatur} {variabel:2.f}")
             st.balloons()
     
     
