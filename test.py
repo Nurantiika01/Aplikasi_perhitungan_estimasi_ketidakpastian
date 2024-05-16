@@ -46,6 +46,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         if tombol:
             nilai_μ_Efek_Temperatur = (volume_rata_rata_mL*delta_suhu*koefisien_muai_air)/1.73205
             st.success(f"Nilai μ Efek Temperatur (mL) adalah {nilai_μ_Efek_Temperatur}")
+                print():.2f 
             st.balloons()
     
     
@@ -85,7 +86,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
             nilai_μ_Volume_Titran = (((miu_kal_buret_mL)**2)+((miu_ET_mL)**2)+((miu_Vendpoint_mL)**2))**0.5
             st.success(f"Nilai μ Volume Titran (mL) adalah {nilai_μ_Volume_Titran}")
             st.balloons()
-print(:.2f)         
+       
 
 
     tab1,tab2,tab3 = st.tabs(["Perhitungan μ Efek Temperatur", "Perhitungan μ Volume Endpoint","Perhitungan μ Volume Titran"])
