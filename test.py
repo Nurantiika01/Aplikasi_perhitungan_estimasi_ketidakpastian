@@ -15,7 +15,7 @@ st.sidebar.text("""
 
 
 with st.sidebar:
-    selected2 = option_menu ('Menu', ['Estimasi Ketidakpastian','Program Aplikasi Perhitungan μ Volume Titran', 'Program Aplikasi Perhitungan μ Faktor Pengali'])
+    selected2 = option_menu ('Menu', ['Estimasi Ketidakpastian','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
 
 
 # with st.sidebar:
@@ -41,9 +41,9 @@ if (selected2 == 'Estimasi Ketidakpastian'):
                 ''')
 
     
-if (selected2 == 'Program Aplikasi Perhitungan μ Volume Titran'):
+if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
-        st.title('Aplikasi Perhitungan μ ET')
+        st.title('Aplikasi Perhitungan μ Efek Temperatur')
 
         volume_rata_rata_mL = st.number_input("Masukan nilai volume rata-rata(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(volume_rata_rata_mL)
@@ -53,17 +53,17 @@ if (selected2 == 'Program Aplikasi Perhitungan μ Volume Titran'):
         st.write(koefisien_muai_air)
     
 
-        tombol = st.button("Hitung nilai μ ET(mL)")
+        tombol = st.button("Hitung nilai μ Efek Temperatur(mL)")
 
         if tombol:
-            nilai_μ_ET = (volume_rata_rata_mL*delta_suhu*koefisien_muai_air)/1.73205
-            st.success(f"Nilai μ ET (mL) adalah {nilai_μ_ET}")
+            nilai_μ_Efek_Temperatur = (volume_rata_rata_mL*delta_suhu*koefisien_muai_air)/1.73205
+            st.success(f"Nilai μ Efek Temperatur (mL) adalah {nilai_μ_Efek_Temperatur}")
             st.balloons()
     
     
     
     def hitung1():
-        st.title('Aplikasi Perhitungan μ Vendpoit')
+        st.title('Aplikasi Perhitungan μ Volume Endpoint')
 
         skala_terkecil_buret_mL = st.number_input("Masukan nilai skala terkecil buret(mL)",key="skala_terkecil_buret_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(skala_terkecil_buret_mL)
@@ -72,11 +72,11 @@ if (selected2 == 'Program Aplikasi Perhitungan μ Volume Titran'):
         koefisien_muai_air_1 = st.number_input("Masukkan nilai koefisien muai air(℃)",key="koefisien_muai_air_1",value=None, placeholder='Ketikkan angka....')
         st.write(koefisien_muai_air_1)
 
-        tombol = st.button("Hitung nilai μ Vendpoit(mL)")
+        tombol = st.button("Hitung nilai μ Vendpoint(mL)")
 
         if tombol:
-            nilai_μ_Vendpoit = (skala_terkecil_buret_mL*delta_suhu_1*koefisien_muai_air_1)/1.73205
-            st.success(f"Nilai μ Vendpoit (mL) adalah {nilai_μ_Vendpoit}")
+            nilai_μ_Volume_Endpoint = (skala_terkecil_buret_mL*delta_suhu_1*koefisien_muai_air_1)/1.73205
+            st.success(f"Nilai μ Volume Endponit (mL) adalah {nilai_μ_Volume_Endpoint}")
             st.balloons()
           
 
@@ -90,16 +90,16 @@ if (selected2 == 'Program Aplikasi Perhitungan μ Volume Titran'):
         miu_Vendpoint_mL = st.number_input("Masukan nilai μ Vendpoint(mL)",key="miu_Vendpoint_mL",value=None, placeholder='Ketikkan angka....')
         st.write(miu_Vendpoint_mL)
 
-        tombol = st.button("Hitung nilai μ Vtitran(mL)")
+        tombol = st.button("Hitung nilai μ Volume Titran(mL)")
 
         if tombol:
-            nilai_μ_VT = (((miu_kal_buret_mL)**2)+((miu_ET_mL)**2)+((miu_Vendpoint_mL)**2))**0.5
+            nilai_μ_Volume_Titran = (((miu_kal_buret_mL)**2)+((miu_ET_mL)**2)+((miu_Vendpoint_mL)**2))**0.5
             st.success(f"Nilai μ Volume Titran (mL) adalah {nilai_μ_VT}")
             st.balloons()
            
 
 
-    tab1,tab2,tab3 = st.tabs(["Perhitungan μ ET", "Perhitungan μ Vendpoit","Perhitungan μ VT"])
+    tab1,tab2,tab3 = st.tabs(["Perhitungan μ Efek Temperatur", "Perhitungan μ Volume Endpoint","Perhitungan μ Volume Titran"])
     with tab1:
         tab1.write(hitung())
     with tab2:
@@ -110,9 +110,9 @@ if (selected2 == 'Program Aplikasi Perhitungan μ Volume Titran'):
 
 
 
-if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
+if (selected2 == ' Perhitungan μ Faktor Pengali'):
     def hitung3():
-        st.title('Aplikasi Perhitungan μ pipet')
+        st.title('Aplikasi Perhitungan μ Pipet')
 
         miu_kal_pipet_mL = st.number_input("Masukan nilai μ kalibrasi pipet(mL)",key="miu_kal_pipet_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_pipet_mL)
@@ -124,18 +124,18 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         st.write(koefisien_muai_air_2)
         
 
-        tombol = st.button("Hitung nilai μ pipet(mL)")
+        tombol = st.button("Hitung nilai μ Pipet(mL)")
 
         if tombol:
-            nilai_μ_pipet = (((miu_kal_pipet_mL/1.73205)**2)+((volume_pipet_mL*delta_suhu_2*koefisien_muai_air_2/1.73205)**2))**0.5
-            st.success(f"Nilai μ pipet adalah {nilai_μ_pipet}")
+            nilai_μ_Pipet = (((miu_kal_pipet_mL/1.73205)**2)+((volume_pipet_mL*delta_suhu_2*koefisien_muai_air_2/1.73205)**2))**0.5
+            st.success(f"Nilai μ Pipet (mL) adalah {nilai_μ_Pipet}")
             st.balloons()
             
 
 
 
     def hitung4():
-        st.title('Aplikasi Perhitungan μ labu takar')
+        st.title('Aplikasi Perhitungan μ Labu Takar')
 
         miu_kal_labu_takar_mL = st.number_input("Masukan nilai μ kalibrasi labu takar(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_labu_takar_mL)
@@ -147,11 +147,11 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         st.write(koefisien_muai_air_4)
         
 
-        tombol = st.button("Hitung nilai μ labu takar(mL)")
+        tombol = st.button("Hitung nilai μ Labu Takar(mL)")
 
         if tombol:
-            nilai_μ_labu_takar = (((miu_kal_labu_takar_mL/1.73205)**2)+((volume_labu_takar_mL_2*delta_suhu_4*koefisien_muai_air_4/1.73205)**2))**0.5
-            st.success(f"Nilai μ labu takar (mL) adalah {nilai_μ_labu_takar }")
+            nilai_μ_Labu_Takar = (((miu_kal_labu_takar_mL/1.73205)**2)+((volume_labu_takar_mL_2*delta_suhu_4*koefisien_muai_air_4/1.73205)**2))**0.5
+            st.success(f"Nilai μ Labu Takar (mL) adalah {nilai_μ_Labu_Takar}")
             st.balloons()
          
 
@@ -170,16 +170,16 @@ if (selected2 == 'Program Aplikasi Perhitungan μ FP'):
         volume_pipet_mL_1 = st.number_input("Masukan nilai volume pipet(mL)",key="volume_pipet_mL_1",value=None, placeholder='Ketikkan angka...' )
         st.write(volume_pipet_mL_1)
         
-        tombol = st.button("Hitung nilai μ FP")
+        tombol = st.button("Hitung nilai μ Faktor Pengali")
 
         if tombol:
-            nilai_μ_FP = faktor_pengali_2*(((miu_labu_takar_mL/volume_labu_takar_mL)**2)+((miu_pipet_mL/volume_pipet_mL_1)**2))**0.5
-            st.success(f"Nilai μ FP adalah {nilai_μ_FP}")
+            nilai_μ_Faktor_Pengali = faktor_pengali_2*(((miu_labu_takar_mL/volume_labu_takar_mL)**2)+((miu_pipet_mL/volume_pipet_mL_1)**2))**0.5
+            st.success(f"Nilai μ Faktor Pengali adalah {nilai_μ_Faktor_Pengali}")
             st.balloons()
                
 
 
-    tab1,tab2,tab3 = st.tabs(["Perhitungan μ pipet", "Perhitungan μ labu takar","Perhitungan μ FP"])
+    tab1,tab2,tab3 = st.tabs(["Perhitungan μ Pipet", "Perhitungan μ Labu Takar","Perhitungan μ Faktor Pengali"])
     with tab1:
         tab1.write(hitung3())
     with tab2:
