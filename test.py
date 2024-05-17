@@ -15,13 +15,23 @@ st.sidebar.text("""
 
 
 with st.sidebar:
-    selected2 = option_menu ('Menu', ['Pengertian','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
+    selected2 = option_menu ('Menu', [Tentang kami','Pengertian','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
 
 
 # with st.sidebar:
 #     selected = option_menu('DATA', ['Program Aplikasi', 'program lpk'])
 
 
+if (selected2 == 'Tentang kami'):
+        st.header("WELCOME TO PROGRAM")
+        st.subheader("KELOMPOK 2")
+        st.text("""
+                1. Afif Dwi Julianandi	        NIM 2360061
+                2. Hanan Dhiya Arrumaisha	NIM 2360135
+                3. Muhammad Haikel Assidqi	NIM 2360186
+                4. Nuranti Ika Wulandari	NIM 2360219
+                5. Sahla Aulia                  NIM 2360250
+                """)
 
 if (selected2 == 'Pengertian'):
         st.title('Apa Itu Estimasi Ketidakpastian???')
