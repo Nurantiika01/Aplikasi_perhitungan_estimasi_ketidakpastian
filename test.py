@@ -107,7 +107,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
 
 
 if (selected2 == ' Perhitungan μ Faktor Pengali'):
-    def hitung3():
+    def hitung4():
         st.title('μ Pipet')
 
         miu_kal_pipet_mL = st.number_input("Masukan nilai μ kalibrasi pipet(mL)",key="miu_kal_pipet_mL",value=None, placeholder='Ketikkan angka...' )
@@ -130,7 +130,7 @@ if (selected2 == ' Perhitungan μ Faktor Pengali'):
 
 
 
-    def hitung4():
+    def hitung5():
         st.title('μ Labu Takar')
 
         miu_kal_labu_takar_mL = st.number_input("Masukan nilai μ kalibrasi labu takar(mL)",value=None, placeholder='Ketikkan angka...' )
@@ -152,7 +152,7 @@ if (selected2 == ' Perhitungan μ Faktor Pengali'):
          
 
 
-    def hitung5():
+    def hitung6():
         st.title('μ Faktor Pengali')
 
         faktor_pengali_2 = st.number_input("Masukan nilai faktor pengali",key="faktor_pengali_2",value=None, placeholder='Ketikkan angka...' )
@@ -177,8 +177,8 @@ if (selected2 == ' Perhitungan μ Faktor Pengali'):
 
     tab1,tab2,tab3 = st.tabs(["Perhitungan μ Pipet", "Perhitungan μ Labu Takar","Perhitungan μ Faktor Pengali"])
     with tab1:
-        tab1.write(hitung3())
+        tab1.write(hitung4())
     with tab2:
-        tab2.write(hitung4())
+        tab2.write(hitung5())
     with tab3:
-        tab3.write(hitung5())
+        tab3.write(hitung6())
