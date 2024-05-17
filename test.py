@@ -122,12 +122,12 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
        st.write(koefisien_muai_air_2)
         
 
-      tombol = st.button("Hitung nilai μ Pipet(mL)")
+       tombol = st.button("Hitung nilai μ Pipet(mL)")
 
-      if tombol:
-          nilai_μ_Pipet = (((miu_kal_pipet_mL/1.73205)**2)+((volume_pipet_mL*delta_suhu_2*koefisien_muai_air_2/1.73205)**2))**0.5
-          st.success(f"Nilai μ Pipet (mL) adalah {nilai_μ_Pipet}")
-          st.balloons()
+       if tombol:
+           nilai_μ_Pipet = (((miu_kal_pipet_mL/1.73205)**2)+((volume_pipet_mL*delta_suhu_2*koefisien_muai_air_2/1.73205)**2))**0.5
+           st.success(f"Nilai μ Pipet (mL) adalah {nilai_μ_Pipet}")
+           st.balloons()
             
 
 
