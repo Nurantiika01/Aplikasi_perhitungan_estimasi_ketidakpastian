@@ -110,7 +110,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
 
 if (selected2 == 'Perhitungan μ Faktor Pengali'):
     def hitung4():
-        st.title('μ Pipet')
+       st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miupipet.jpg')
 
         miu_kal_pipet_mL = st.number_input("Masukan nilai μ kalibrasi pipet(mL)",key="miu_kal_pipet_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_pipet_mL)
@@ -133,7 +133,7 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
 
 
     def hitung5():
-        st.title('μ Labu Takar')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miukallabutakar.jpg')
 
         miu_kal_labu_takar_mL = st.number_input("Masukan nilai μ kalibrasi labu takar(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_labu_takar_mL)
@@ -155,7 +155,7 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
 
 
     def hitung6():
-        st.title('μ Faktor Pengali')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miufp.jpg')
 
         faktor_pengali_2 = st.number_input("Masukan nilai faktor pengali",key="faktor_pengali_2",value=None, placeholder='Ketikkan angka...' )
         st.write(faktor_pengali_2)    
