@@ -32,7 +32,9 @@ if (selected2 == 'Pendahuluan'):
 if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
         st.title('μ kalibrasi Buret')
-
+        st.header('Rumus μ kalibrasi buret :')
+        st.subheader('μ kal.buret = (±buret )/(√3)')
+            
         plus_minus_buret_mL = st.number_input("Masukan nilai ±buret (mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(plus_minus_buret_mL)
 
