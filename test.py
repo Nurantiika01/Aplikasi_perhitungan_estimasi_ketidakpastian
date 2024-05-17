@@ -15,7 +15,7 @@ st.sidebar.text("""
 
 
 with st.sidebar:
-    selected2 = option_menu ('Menu', ['Estimasi Ketidakpastian','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
+    selected2 = option_menu ('Menu', ['Pendahuluan','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
 
 
 # with st.sidebar:
@@ -23,7 +23,7 @@ with st.sidebar:
 
 
 
-if (selected2 == 'Estimasi Ketidakpastian'):
+if (selected2 == 'Pendahuluan'):
         st.title('Apa Itu Estimasi Ketidakpastian???')
         st.write('''Estimasi ketidakpastian adalah aspek kritis dalam analisis data yang memungkinkan peneliti dan praktisi untuk mengukur seberapa tidak pastinya hasil pengukuran atau perhitungan. Dalam era sekarang ini dimana keputusan seringkali didasarkan pada data dan analisis, pemahaman yang mendalam tentang ketidakpastian menjadi semakin penting. Konsep ketidakpastian memiliki aplikasi yang luas di berbagai bidang, termasuk fisika, kimia, biologi, teknik, ekonomi dan banyak lagi. Dalam bidang kimia analis, ketidakpastian membantu dalam penafsiran hasil eksperimen atau praktikum dan memvalidasi teori. Aplikasi ini membantu para pengambil keputusan untuk memahami risiko yang terkait dengan berbagai pilihan yang tersedia. Dengan pemahaman yang baik tentang ketidakpastian, keputusan dapat dibuat secara lebih informan dan berbasis data. Dalam era digital yang terus berkembang, kemampuan dalam pemrograman komputer menjadi semakin penting. Pemahaman yang kuat tentang logika pemrograman adalah fondasi yang diperlukan untuk mengembangkan program komputer yang efektif dan efisien. Selain itu, dalam konteks analisis data, khususnya dalam pembuatan laporan estimasi ketidakpastian, perlunya perhitungan yang teliti dan akurat semakin mendesak.
                 ''')
@@ -84,19 +84,10 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
           
 
     def hitung3():
-        st.title('μ Volume Titran')
-        
-        miu_kal_buret_mL = st.number_input("Masukan nilai μ kalibrasi buret(mL)",key="miu_kal_buret_mL",value=None, placeholder='Ketikkan angka...' )
-        st.write(miu_kal_buret_mL)
-        miu_ET_mL= st.number_input("Masukan nilai μ ET(mL)",key="miu_ET_mL",value=None, placeholder='Ketikkan angka...')
-        st.write(miu_ET_mL)
-        miu_Vendpoint_mL = st.number_input("Masukan nilai μ Vendpoint(mL)",key="miu_Vendpoint_mL",value=None, placeholder='Ketikkan angka....')
-        st.write(miu_Vendpoint_mL)
-
         tombol = st.button("Hitung nilai μ Volume Titran(mL)")
 
         if tombol:
-            nilai_μ_Volume_Titran = (((miu_kal_buret_mL)**2)+((miu_ET_mL)**2)+((miu_Vendpoint_mL)**2))**0.5
+            nilai_μ_Volume_Titran = (((nilai_μ_kalibrasi_buretL)**2)+((nilai_μ_Efek_Temperatur)**2)+((nilai_μ_Volume_EndpointL)**2))**0.5
             st.success(f"Nilai μ Volume Titran (mL) adalah {nilai_μ_Volume_Titran}")
             st.balloons()
        
