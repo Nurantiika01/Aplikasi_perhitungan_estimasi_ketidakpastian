@@ -13,13 +13,13 @@ with st.sidebar:
 
 
 if (selected2 == 'Tentang kami'):
-        st.title('WELCOME TO PROGRAM', divider='rainbow')
-        st.subheader("KELOMPOK 2")
+        st.subheader('WELCOME TO PROGRAM', divider='rainbow')
+        st.header("KELOMPOK 2",, divider='rainbow')
         st.text("""
                 1. Afif Dwi Julianandi	        NIM 2360061
-                2. Hanan Dhiya Arrumaisha	NIM 2360135
-                3. Muhammad Haikel Assidqi	NIM 2360186
-                4. Nuranti Ika Wulandari	NIM 2360219
+                2. Hanan Dhiya Arrumaisha	    NIM 2360135
+                3. Muhammad Haikel Assidqi    	NIM 2360186
+                4. Nuranti Ika Wulandari	    NIM 2360219
                 5. Sahla Aulia                  NIM 2360250
                 """)
 
