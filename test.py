@@ -24,6 +24,7 @@ with st.sidebar:
 
 if (selected2 == 'Tentang kami'):
         st.header("WELCOME TO PROGRAM")
+        st.markdown('<hr style="border: 2px solid blue;">', unsafe_allow_html=True)
         st.subheader("KELOMPOK 2")
         st.text("""
                 1. Afif Dwi Julianandi	        NIM 2360061
