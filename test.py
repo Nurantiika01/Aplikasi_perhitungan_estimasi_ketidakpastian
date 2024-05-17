@@ -40,7 +40,6 @@ if (selected2 == 'Pengertian'):
     
 if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
-        st.title('μ kalibrasi Buret')
         st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miukalburet.png.jpg')
             
         plus_minus_buret_mL = st.number_input("Masukan nilai ±buret (mL)",value=None, placeholder='Ketikkan angka...' )
@@ -55,7 +54,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
 
 
     def hitung1():
-        st.title('μ Efek Temperatur')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miuET.jpg')       
 
         volume_rata_rata_mL = st.number_input("Masukan nilai volume rata-rata(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(volume_rata_rata_mL)
