@@ -15,7 +15,7 @@ st.sidebar.text("""
 
 
 with st.sidebar:
-    selected2 = option_menu ('Menu', [Tentang kami','Pengertian','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
+    selected2 = option_menu ('Menu', ['Tentang kami','Pengertian','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
 
 
 # with st.sidebar:
