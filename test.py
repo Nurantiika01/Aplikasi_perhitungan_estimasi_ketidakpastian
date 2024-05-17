@@ -32,7 +32,7 @@ if (selected2 == 'pengertian'):
 if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
         st.title('μ kalibrasi Buret')
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miukalburet.png.png')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/kalburet.png.jpg')
             
         plus_minus_buret_mL = st.number_input("Masukan nilai ±buret (mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(plus_minus_buret_mL)
