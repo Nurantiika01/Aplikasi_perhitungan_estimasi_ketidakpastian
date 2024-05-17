@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 
 st.sidebar.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/akabogor.png.png')
+st.sidebar.header("WELCOME TO PROGRAM")
 
 with st.sidebar:
     selected2 = option_menu ('Menu', ['Tentang kami','Pengertian','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
@@ -13,8 +14,8 @@ with st.sidebar:
 
 
 if (selected2 == 'Tentang kami'):
-        st.subheader('WELCOME TO PROGRAM', divider='rainbow')
-        st.header("✨✨✨✨KELOMPOK 2✨✨✨✨", divider='rainbow')
+        st.header('WELCOME TO PROGRAM', divider='rainbow')
+        st.sebheader("✨✨✨✨KELOMPOK 2✨✨✨✨", divider='rainbow')
         st.text("""
                 1. Afif Dwi Julianandi	        NIM 2360061
                 2. Hanan Dhiya Arrumaisha	    NIM 2360135
