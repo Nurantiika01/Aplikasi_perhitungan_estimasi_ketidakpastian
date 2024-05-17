@@ -112,14 +112,14 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
     def hitung4():
        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miupipet.jpg')
 
-        miu_kal_pipet_mL = st.number_input("Masukan nilai μ kalibrasi pipet(mL)",key="miu_kal_pipet_mL",value=None, placeholder='Ketikkan angka...' )
-        st.write(miu_kal_pipet_mL)
-        volume_pipet_mL = st.number_input("Masukan nilai volume pipet(mL)",key="volume_pipet_mL",value=None, placeholder='Ketikkan angka...' )
-        st.write(volume_pipet_mL)
-        delta_suhu_2 = st.number_input("Masukan nilai delta suhu(℃)",key="delta_suhu_2",value=None, placeholder='Ketikkan angka...')
-        st.write(delta_suhu_2)
-        koefisien_muai_air_2 = st.number_input("Masukkan nilai koefisien muai air(℃)",key="koefisien_muai_air_2",value=None, placeholder='Ketikkan angka....')
-        st.write(koefisien_muai_air_2)
+       miu_kal_pipet_mL = st.number_input("Masukan nilai μ kalibrasi pipet(mL)",key="miu_kal_pipet_mL",value=None, placeholder='Ketikkan angka...' )
+       st.write(miu_kal_pipet_mL)
+       volume_pipet_mL = st.number_input("Masukan nilai volume pipet(mL)",key="volume_pipet_mL",value=None, placeholder='Ketikkan angka...' )
+       st.write(volume_pipet_mL)
+       delta_suhu_2 = st.number_input("Masukan nilai delta suhu(℃)",key="delta_suhu_2",value=None, placeholder='Ketikkan angka...')
+       st.write(delta_suhu_2)
+       koefisien_muai_air_2 = st.number_input("Masukkan nilai koefisien muai air(℃)",key="koefisien_muai_air_2",value=None, placeholder='Ketikkan angka....')
+       st.write(koefisien_muai_air_2)
         
 
         tombol = st.button("Hitung nilai μ Pipet(mL)")
