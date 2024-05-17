@@ -87,7 +87,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         tombol = st.button("Hitung nilai μ Volume Titran(mL)")
 
         if tombol:
-            nilai_μ_Volume_Titran = (((nilai_μ_kalibrasi_buretL)**2)+((nilai_μ_Efek_Temperatur)**2)+((nilai_μ_Volume_EndpointL)**2))**0.5
+            nilai_μ_Volume_Titran = (((nilai_μ_kalibrasi_buret)**2)+((nilai_μ_Efek_Temperatur)**2)+((nilai_μ_Volume_Endpoint)**2))**0.5
             st.success(f"Nilai μ Volume Titran (mL) adalah {nilai_μ_Volume_Titran}")
             st.balloons()
        
