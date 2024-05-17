@@ -3,16 +3,6 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 
 st.sidebar.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/akabogor.png.png')
-st.sidebar.header("WELCOME TO PROGRAM")
-st.sidebar.subheader("KELOMPOK 2")
-st.sidebar.text("""
-        1. Afif Dwi Julianandi (@shdwind_)
-        2. Hanan Dhiya Arrumaisha (@hanndhy.arr)
-        3. Muhammad Haikel Assidqi (@mhaikel_a)
-        4. Nuranti Ika Wulandari (@nurantiikaw_)
-        5. Sahla Aulia (@shlayaa_)
-        """)
-
 
 with st.sidebar:
     selected2 = option_menu ('Menu', ['Tentang kami','Pengertian','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
