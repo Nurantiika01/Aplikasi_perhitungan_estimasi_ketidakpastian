@@ -3,7 +3,6 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 
 st.sidebar.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/akabogor.png.png')
-st.sidebar.header("WELCOME TO PROGRAM")
 
 with st.sidebar:
     selected2 = option_menu ('Menu', ['Tentang kami','Pengertian','Perhitungan μ Volume Titran', 'Perhitungan μ Faktor Pengali'])
@@ -15,7 +14,7 @@ with st.sidebar:
 
 if (selected2 == 'Tentang kami'):
         st.header('WELCOME TO PROGRAM', divider='rainbow')
-        st.subheader("✨✨✨✨✨✨KELOMPOK 2✨✨✨✨✨✨", divider='rainbow')
+        st.subheader("✨✨✨✨✨✨KELOMPOK 2✨✨✨✨✨✨")
         st.text("""
                 1. Afif Dwi Julianandi	        NIM 2360061
                 2. Hanan Dhiya Arrumaisha	    NIM 2360135
@@ -23,6 +22,8 @@ if (selected2 == 'Tentang kami'):
                 4. Nuranti Ika Wulandari	    NIM 2360219
                 5. Sahla Aulia                  NIM 2360250
                 """)
+        st.subheader('🙌Hallo Warga IMAKA🙌')
+        st.write('Sebuah aplikasi yang dapat memfasilitasi perhitungan ketidakpastian pengukuran dengan mudah dan akurat. Aplikasi ini diharapkan dapat meningkatkan efisiensi dan akurasi dalam pembuatan laporan estimasi, serta memberikan kesempatan bagi pengguna untuk memperdalam pemahaman mereka tentang konsep-konsep logika pemrograman. Dengan demikian, proyek ini tidak hanya memberikan solusi praktis, tetapi juga berfungsi sebagai alat pembelajaran yang bernilai bagi para pengguna.')
 
 if (selected2 == 'Pengertian'):
         underlined_text = '<h1 style="color:blue; text-decoration:underline;">Apa itu Estimasi Ketidakpastian</h1>'
