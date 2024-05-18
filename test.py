@@ -44,7 +44,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         if tombol:
             nilai_μ_kalibrasi_buret =  plus_minus_buret_mL/1.73205
             st.success(f"Nilai μ Kalibrasi Buret (mL) adalah {nilai_μ_kalibrasi_buret}")
-            st.caption('Pada perhitungan μ hanya 2 angka dibelakang koma. Contoh :blue[0.03]')
+            st.caption('Pada hasil perhitungan μ bulatkan menjadi :blue[2] angka dibelakang koma.')
             st.balloons()
 
 
@@ -64,7 +64,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         if tombol:
             nilai_μ_Efek_Temperatur = (volume_rata_rata_mL*delta_suhu*koefisien_muai_air)/1.73205
             st.success(f"Nilai μ Efek Temperatur (mL) adalah {nilai_μ_Efek_Temperatur}")
-            st.caption('Pada perhitungan μ hanya 2 angka dibelakang koma. Contoh :blue[0.007]')
+            st.caption('Pada hasil perhitungan μ bulatkan menjadi :blue[2] angka dibelakang koma.')
             st.balloons()
     
     
@@ -84,7 +84,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         if tombol:
             nilai_μ_Volume_Endpoint = (skala_terkecil_buret_mL*delta_suhu_1*koefisien_muai_air_1)/1.73205
             st.success(f"Nilai μ Volume Endponit (mL) adalah {nilai_μ_Volume_Endpoint}")
-            st.caption('Pada perhitungan μ hanya 2 angka dibelakang koma. Contoh :blue[0.00002]')
+            st.caption('Pada hasil perhitungan μ bulatkan menjadi :blue[2] angka dibelakang koma.')
             st.balloons()
                 
           
@@ -104,7 +104,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
         if tombol:
             nilai_μ_Volume_Titran = (((miu_kal_buret_mL)**2)+((miu_ET_mL)**2)+((miu_Vendpoint_mL)**2))**0.5
             st.success(f"Nilai μ Volume Titran (mL) adalah {nilai_μ_Volume_Titran}")
-            st.caption('Pada perhitungan μ hanya 2 angka dibelakang koma. Contoh :blue[0.03]')
+            st.caption('Pada hasil perhitungan μ bulatkan menjadi :blue[2] angka dibelakang koma.')
             st.balloons()
 
 
@@ -141,7 +141,7 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
        if tombol:
            nilai_μ_Pipet = (((miu_kal_pipet_mL/1.73205)**2)+((volume_pipet_mL*delta_suhu_2*koefisien_muai_air_2/1.73205)**2))**0.5
            st.success(f"Nilai μ Pipet (mL) adalah {nilai_μ_Pipet}")
-           st.caption('Pada perhitungan μ hanya 2 angka dibelakang koma. Contoh :blue[0.03]')
+           st.caption('Pada hasil perhitungan μ bulatkan menjadi :blue[2] angka dibelakang koma.')
            st.balloons()
             
 
@@ -165,7 +165,7 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
         if tombol:
             nilai_μ_Labu_Takar = (((miu_kal_labu_takar_mL/1.73205)**2)+((volume_labu_takar_mL_2*delta_suhu_4*koefisien_muai_air_4/1.73205)**2))**0.5
             st.success(f"Nilai μ Labu Takar (mL) adalah {nilai_μ_Labu_Takar}")
-            st.caption('Pada perhitungan μ hanya 2 angka dibelakang koma. Contoh :blue[0.1]')
+            st.caption('Pada hasil perhitungan μ bulatkan menjadi :blue[2] angka dibelakang koma.')
             st.balloons()
          
 
@@ -189,7 +189,7 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
         if tombol:
             nilai_μ_Faktor_Pengali = faktor_pengali_2*(((miu_labu_takar_mL/volume_labu_takar_mL)**2)+((miu_pipet_mL/volume_pipet_mL_1)**2))**0.5
             st.success(f"Nilai μ Faktor Pengali adalah {nilai_μ_Faktor_Pengali}")
-            st.caption('Pada perhitungan μ hanya 2 angka dibelakang koma. Contoh :blue[0.006]')
+            st.caption('Pada hasil perhitungan μ bulatkan menjadi :blue[2] angka dibelakang koma.')
             st.balloons()
                
 
