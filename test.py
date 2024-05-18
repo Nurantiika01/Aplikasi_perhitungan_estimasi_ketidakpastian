@@ -33,6 +33,9 @@ if (selected2 == 'Pengertian'):
     
 if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
+        st.header('Kalibrasi Buret', divider='rainbow')
+        st.subheader(:blue[Tujuan?])
+        st.write('Proses kalibrasi buret bertujuan untuk mengevaluasi dan menentukan kembali akurasi alat ukur. Tujuan kalibrasi adalah untuk memastikan bahwa buret dapat memberikan hasil pengukuran yang akurat, konsisten, dan dapat diandalkan. Tanpa kalibrasi yang tepat, hasil pengukuran dari buret dapat menyebabkan kesalahan dalam analisis yang dilakukan, dan akibatnya dapat menghasilkan kesalahan dalam pengambilan keputusan.')
         st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/kalburet.jpg')
             
         plus_minus_buret_mL = st.number_input("Masukan nilai ±buret (mL)",value=None, placeholder='Ketikkan angka...' )
@@ -67,7 +70,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
     
     
     def hitung2():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/VEndpoint.jpg')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/Vedpoint.jpg')
 
         skala_terkecil_buret_mL = st.number_input("Masukan nilai skala terkecil buret(mL)",key="skala_terkecil_buret_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(skala_terkecil_buret_mL)
@@ -142,7 +145,7 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
 
 
     def hitung5():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/kalLTr.jpg')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/kalLT.jpg')
 
         miu_kal_labu_takar_mL = st.number_input("Masukan nilai μ kalibrasi labu takar(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_labu_takar_mL)
@@ -164,7 +167,7 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
 
 
     def hitung6():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/fp.jpg')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/FP.jpg')
 
         faktor_pengali_2 = st.number_input("Masukan nilai faktor pengali",key="faktor_pengali_2",value=None, placeholder='Ketikkan angka...' )
         st.write(faktor_pengali_2)    
