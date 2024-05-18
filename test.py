@@ -73,7 +73,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
     
     
     def hitung2():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/Vedpoint.jpg')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/Vendpoint.jpg')
 
         skala_terkecil_buret_mL = st.number_input("Masukan nilai skala terkecil buret(mL)",key="skala_terkecil_buret_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(skala_terkecil_buret_mL)
