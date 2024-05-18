@@ -14,6 +14,7 @@ with st.sidebar:
 
 if (selected2 == 'Tentang kami'):
         st.header('WELCOME TO PROGRAM', divider='rainbow')
+    
         st.subheader("✨✨✨✨✨✨KELOMPOK 2✨✨✨✨✨✨")
         st.text("""
                 1. Afif Dwi Julianandi	        NIM 2360061
@@ -22,13 +23,12 @@ if (selected2 == 'Tentang kami'):
                 4. Nuranti Ika Wulandari	    NIM 2360219
                 5. Sahla Aulia                  NIM 2360250
                 """)
+    
         st.subheader('🙌Hallo Warga IMAKA🙌')
         st.write('Sebuah aplikasi yang dapat memfasilitasi perhitungan ketidakpastian pengukuran dengan mudah dan akurat. Aplikasi ini diharapkan dapat meningkatkan efisiensi dan akurasi dalam pembuatan laporan estimasi, serta memberikan kesempatan bagi pengguna untuk memperdalam pemahaman mereka tentang konsep-konsep logika pemrograman. Dengan demikian, proyek ini tidak hanya memberikan solusi praktis, tetapi juga berfungsi sebagai alat pembelajaran yang bernilai bagi para pengguna.')
 
 if (selected2 == 'Pengertian'):
-        underlined_text = '<h1 style="color:blue; text-decoration:underline;">Apa itu Estimasi Ketidakpastian</h1>'
-
-        st.markdown(underlined_text, unsafe_allow_html=True)
+        st.subheader('📝Apa itu Estimasi Ketidakpastian???',divider='rainbow')
         st.write('Estimasi ketidakpastian adalah aspek kritis dalam analisis data yang memungkinkan peneliti dan praktisi untuk mengukur seberapa tidak pastinya hasil pengukuran atau perhitungan. Dalam era sekarang ini dimana keputusan seringkali didasarkan pada data dan analisis, pemahaman yang mendalam tentang ketidakpastian menjadi semakin penting. Konsep ketidakpastian memiliki aplikasi yang luas di berbagai bidang, termasuk fisika, kimia, biologi, teknik, ekonomi dan banyak lagi. Dalam bidang kimia analis, ketidakpastian membantu dalam penafsiran hasil eksperimen atau praktikum dan memvalidasi teori. Aplikasi ini membantu para pengambil keputusan untuk memahami risiko yang terkait dengan berbagai pilihan yang tersedia. Dengan pemahaman yang baik tentang ketidakpastian, keputusan dapat dibuat secara lebih informan dan berbasis data. Dalam era digital yang terus berkembang, kemampuan dalam pemrograman komputer menjadi semakin penting. Pemahaman yang kuat tentang logika pemrograman adalah fondasi yang diperlukan untuk mengembangkan program komputer yang efektif dan efisien. Selain itu, dalam konteks analisis data, khususnya dalam pembuatan laporan estimasi ketidakpastian, perlunya perhitungan yang teliti dan akurat semakin mendesak.')
 
     
