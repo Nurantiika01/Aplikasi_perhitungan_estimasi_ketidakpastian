@@ -46,7 +46,8 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
 
         if tombol:
             nilai_μ_kalibrasi_buret =  plus_minus_buret_mL/1.73205
-            st.success(f"Nilai μ Kalibrasi Buret (mL) adalah {nilai_μ_kalibrasi_buret:.2f}")
+            st.success(f"Nilai μ Kalibrasi Buret (mL) adalah {nilai_μ_kalibrasi_buret}")
+            st.caption('Pada perhitungan μ hanya 2 angka dibelakang koma. Contoh :blue[0.05]')
             st.balloons()
 
 
