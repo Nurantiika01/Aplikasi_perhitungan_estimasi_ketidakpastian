@@ -17,11 +17,11 @@ if (selected2 == 'Tentang kami'):
     
         st.subheader("✨✨✨✨✨✨KELOMPOK 2✨✨✨✨✨✨")
         st.text("""
-                1. Afif Dwi Julianandi	        NIM 2360061
-                2. Hanan Dhiya Arrumaisha	    NIM 2360135
-                3. Muhammad Haikel Assidqi    	NIM 2360186
-                4. Nuranti Ika Wulandari	    NIM 2360219
-                5. Sahla Aulia                  NIM 2360250
+                1. Afif Dwi Julianandi            NIM 2360061
+                2. Hanan Dhiya Arrumaisha         NIM 2360135
+                3. Muhammad Haikel Assidqi        NIM 2360186
+                4. Nuranti Ika Wulandari          NIM 2360219
+                5. Sahla Aulia                    NIM 2360250
                 """)
     
         st.subheader('🙌Hallo Warga IMAKA🙌')
