@@ -33,7 +33,7 @@ if (selected2 == 'Pengertian'):
     
 if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miukalburet.png.jpg')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/kalburet.jpg')
             
         plus_minus_buret_mL = st.number_input("Masukan nilai ±buret (mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(plus_minus_buret_mL)
@@ -47,7 +47,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
 
 
     def hitung1():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miuET.jpg')       
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/ET.jpg')       
 
         volume_rata_rata_mL = st.number_input("Masukan nilai volume rata-rata(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(volume_rata_rata_mL)
@@ -67,7 +67,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
     
     
     def hitung2():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miuVEndpoint.jpg')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/VEndpoint.jpg')
 
         skala_terkecil_buret_mL = st.number_input("Masukan nilai skala terkecil buret(mL)",key="skala_terkecil_buret_mL",value=None, placeholder='Ketikkan angka...' )
         st.write(skala_terkecil_buret_mL)
@@ -86,14 +86,22 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
           
 
     def hitung3():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miuVT.jpg')     
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/VT.jpg')     
+        
+        miu_kal_buret_mL = st.number_input("Masukan nilai μ kalibrasi buret(mL)",key="miu_kal_buret_mL",value=None, placeholder='Ketikkan angka...' )
+        st.write(miu_kal_buret_mL)
+        miu_ET_mL= st.number_input("Masukan nilai μ ET(mL)",key="miu_ET_mL",value=None, placeholder='Ketikkan angka...')
+        st.write(miu_ET_mL)
+        miu_Vendpoint_mL = st.number_input("Masukan nilai μ Vendpoint(mL)",key="miu_Vendpoint_mL",value=None, placeholder='Ketikkan angka....')
+        st.write(miu_Vendpoint_mL)
+
         tombol = st.button("Hitung nilai μ Volume Titran(mL)")
 
         if tombol:
-            nilai_μ_Volume_Titran = (((nilai_μ_kalibrasi_buret)**2)+((nilai_μ_Efek_Temperatur)**2)+((nilai_μ_Volume_Endpoint)**2))**0.5
+            nilai_μ_Volume_Titran = (((miu_kal_buret_mL)*2)+((miu_ET_mL)2)+((miu_Vendpoint_mL)2))*0.5
             st.success(f"Nilai μ Volume Titran (mL) adalah {nilai_μ_Volume_Titran}")
             st.balloons()
-       
+
 
 
     tab1,tab2,tab3,tab4 = st.tabs(["Perhitungan μ kalibrasi buret", "Perhitungan μ Efek Temperatur", "Perhitungan μ Volume Endpoint","Perhitungan μ Volume Titran"])
@@ -111,7 +119,7 @@ if (selected2 == 'Perhitungan μ Volume Titran'):
 
 if (selected2 == 'Perhitungan μ Faktor Pengali'):
     def hitung4():
-       st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miupipet.jpg')
+       st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/pipet.jpg')
 
        miu_kal_pipet_mL = st.number_input("Masukan nilai μ kalibrasi pipet(mL)",key="miu_kal_pipet_mL",value=None, placeholder='Ketikkan angka...' )
        st.write(miu_kal_pipet_mL)
@@ -134,7 +142,7 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
 
 
     def hitung5():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miukallabutakar.jpg')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/kalLTr.jpg')
 
         miu_kal_labu_takar_mL = st.number_input("Masukan nilai μ kalibrasi labu takar(mL)",value=None, placeholder='Ketikkan angka...' )
         st.write(miu_kal_labu_takar_mL)
@@ -156,7 +164,7 @@ if (selected2 == 'Perhitungan μ Faktor Pengali'):
 
 
     def hitung6():
-        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/miufp.jpg')
+        st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/fp.jpg')
 
         faktor_pengali_2 = st.number_input("Masukan nilai faktor pengali",key="faktor_pengali_2",value=None, placeholder='Ketikkan angka...' )
         st.write(faktor_pengali_2)    
