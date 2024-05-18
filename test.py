@@ -34,7 +34,7 @@ if (selected2 == 'Pengertian'):
 if (selected2 == 'Perhitungan μ Volume Titran'):
     def hitung():
         st.header('Kalibrasi Buret', divider='rainbow')
-        '<h1 style="color:blue; text-decoration:underline;">Tujuan?</h1>'
+        :blue[underlined_text]
         st.write('Proses kalibrasi buret bertujuan untuk mengevaluasi dan menentukan kembali akurasi alat ukur. Tujuan kalibrasi adalah untuk memastikan bahwa buret dapat memberikan hasil pengukuran yang akurat, konsisten, dan dapat diandalkan. Tanpa kalibrasi yang tepat, hasil pengukuran dari buret dapat menyebabkan kesalahan dalam analisis yang dilakukan, dan akibatnya dapat menghasilkan kesalahan dalam pengambilan keputusan.')
         st.image('https://raw.githubusercontent.com/Nurantiika01/Aplikasi_perhitungan_estimasi_ketidakpastian/main/kalburet.jpg')
             
