@@ -15,7 +15,7 @@ with st.sidebar:
 if (selected2 == 'Tentang kami'):
         st.header('WELCOME TO PROGRAM', divider='rainbow')
     
-        st.subheader("✨✨✨✨✨✨KELOMPOK 2✨✨✨✨✨✨")
+        st.subheader("✨KELOMPOK 2✨")
         st.text("""
                 1. Afif Dwi Julianandi            NIM 2360061
                 2. Hanan Dhiya Arrumaisha         NIM 2360135
